@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    border-bottom: solid 2px #ffc800;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: #000000;
+    cursor: pointer;
+}
+.logo img{
+    width: 120px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+.sign-btn{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #000000, #000000);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.sign-btn span{
+    display: block;
+    padding: 6px 20px;
+}
+.join-btn{
+    top: 40px;
+    right: 200px;
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #000000, #000000);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.join-btn span{
+    display: block;
+    padding: 6px 20px;
+}
+
+.search{
+    height: 40px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #ffc800, #ffc800);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.input{
+    font-size: 16px;
+    width: 325px;
+    height: 100%;
+    margin-left: 5%;
+    border: 0px;
+    border-radius: 25px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+    
+}
+
+.button{
+    width: 50px;
+    height: 100%;
+    float: right;
+    border: 0px;
+    background: #ffc800;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(#ffc800, #ffc800), radial-gradient(circle at top left, #ffc800, #ffc800);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+a:link { color: rgb(0, 0, 0); text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: rgb(0, 0, 0); text-decoration: none;}
+
+body{
+    margin: 0px;
+    padding: 5px;
+}
+
+footer{
+    border-bottom: solid 2px #ffc800;
+    margin: 0px;
+    padding-bottom: 30%;
+    height: 30px;
+    position: relative;
+}
