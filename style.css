@@ -105,18 +105,13 @@ a:hover { color: rgb(0, 0, 0); text-decoration: none;}
 }
 
 .footer{
-    height: 30px;
-    background-color: #ffc800;
 }
 
 .section{
-    background-color: aqua;
 }
 
 .nav{
-    background-color: burlywood;
 }
 
 .aside{
-    background-color: crimson;
 }
