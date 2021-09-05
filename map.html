@@ -9,65 +9,21 @@
 //지도를 삽입할 HTML 요소 또는 HTML 요소의 id를 지정합니다.
 var mapDiv = document.getElementById('map'); // 'map'으로 선언해도 동일
 
-var HOME_PATH = window.HOME_PATH || '.';
 var map = new naver.maps.Map('map', {
-        bounds: naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.3585229, 127.1010728),
-                                              new naver.maps.LatLng(37.3658036, 127.1222656))
-    });
-
-var defaultMarker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.3606904, 127.1061625),
-    map: map,
-    icon: {
-        content: '<img src="'+ HOME_PATH +'/img/example/pin_default.png" alt="" ' +
-                 'style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; ' +
-                 '-webkit-user-select: none; position: absolute; width: 22px; height: 35px; left: 0px; top: 0px;">',
-        size: new naver.maps.Size(22, 35),
-        anchor: new naver.maps.Point(11, 35)
-    }
+    center: new naver.maps.LatLng(37.4207613, 126.7528827),
+    zoom: 15
 });
 
-var greenMarker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.3613962, 127.1112487),
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.4211609, 126.7522022),
     map: map,
-    title: 'Green',
-    icon: {
-        content: [
-                    '<div class="cs_mapbridge">',
-                        '<div class="map_group _map_group crs">',
-                            '<div class="map_marker _marker num1 num1_big"> ',
-                                '<span class="ico _icon"></span>',
-                                '<span class="shd"></span>',
-                            '</div>',
-                        '</div>',
-                    '</div>'
-                ].join(''),
-        size: new naver.maps.Size(38, 58),
-        anchor: new naver.maps.Point(19, 58),
-    },
-    draggable: true
+    title: 'YC 편의점'
 });
 
-var pinkMarker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.3637770, 127.1174332),
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.4211547, 126.7516719),
     map: map,
-    icon: {
-        content: [
-                    '<div class="cs_mapbridge">',
-                        '<div class="map_group _map_group">',
-                            '<div class="map_marker _marker tvhp tvhp_big">',
-                                '<span class="ico _icon"></span>',
-                                '<span class="shd"></span>',
-                            '</div>',
-                        '</div>',
-                    '</div>'
-                ].join(''),
-        size: new naver.maps.Size(38, 58),
-        anchor: new naver.maps.Point(19, 58),
-    }
+    title: 'CKG 피자'
 });
-
-pinkMarker.setTitle('Pink Hot');
-pinkMarker.setDraggable(true);
 
 </script>
