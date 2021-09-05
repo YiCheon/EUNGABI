@@ -108,3 +108,15 @@ body{
     height: 30px;
     background-color: #ffc800;
 }
+
+.section{
+    background-color: aqua;
+}
+
+.nav{
+    background-color: burlywood;
+}
+
+.aside{
+    background-color: crimson;
+}
