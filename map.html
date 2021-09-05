@@ -16,6 +16,16 @@ var map = new naver.maps.Map('map', {
 
 var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.4207613, 126.7528827),
-    map: map
+    map: map,
+    title: 'YC 편의점',
+    icon:{
+        content:[
+
+
+                ].join(''),
+        size: new naver.maps.size(38, 58),
+        anchor: new naver.maps.Point(19, 58),   
+    },
+    draggable: false
 });
 </script>
