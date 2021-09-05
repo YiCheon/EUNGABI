@@ -103,11 +103,3 @@ body{
     margin: 0px;
     padding: 5px;
 }
-
-footer{
-    border-bottom: solid 2px #ffc800;
-    margin: 0px;
-    padding-bottom: 30%;
-    height: 30px;
-    position: relative;
-}
