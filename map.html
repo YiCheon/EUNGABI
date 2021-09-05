@@ -11,14 +11,13 @@ var mapDiv = document.getElementById('map'); // 'map'으로 선언해도 동일
 
 var map = new naver.maps.Map('map', {
     center: new naver.maps.LatLng(37.4207613, 126.7528827),
-    zoom: 15
+    zoom: 20
 });
 
 
 var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.4207613, 126.7528827),
     map: map,
-    
     title: 'YC 편의점',
     icon:{
         content:[
@@ -30,7 +29,5 @@ var marker = new naver.maps.Marker({
         size: new naver.maps.size(38, 58),
         anchor: new naver.maps.Point(19, 58),   
     }
-    
 });
-
 </script>
