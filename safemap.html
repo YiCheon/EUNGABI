@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+        <script type="text/javascript" src="http://www.safemap.go.kr/legend/legendApiXml.do?apikey=B5RUV9XM-B5RU-B5RU-B5RU-B5RUV9XML5
+        &layer=A2SM_CRMNLSTATS&style=A2SM_CrmnlStats_Tot">
+        </script>
+
+        <script>
+            param = {name:'치안사고통계(전체)',
+            serverUrl:'www.safemap.go.kr/sm/apis.do?apikey=[APIKEY]',
+            layername:'A2SM_CRMNLSTATS',
+            styles:'A2SM_CrmnlStats_Tot'};
+            var wmsLayer = new OpenLayers.Layer.WMS( param.name, param.serverUrl,
+            {layers: ''+param.layername,
+            styles:param.styles,
+            format: 'image/png',
+            exceptions:'text/xml',
+            transparent: true},
+            {isBaseLayer: false});
+        </script>
+    </html>
